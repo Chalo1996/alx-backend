@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""0-basic_cache module."""
+"""0-basic_cache module.
+
+- BasicCache class that inherits from BaseCaching and is a caching system.
+"""
 
 
 BaseCaching = __import__('baseClass').BaseCaching
