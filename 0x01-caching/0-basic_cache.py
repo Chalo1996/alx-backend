@@ -18,9 +18,10 @@ class BasicCache(BaseCaching):
     """
 
     def put(self, key, item):
-        """Assign to the dictionary an item for the key.
+        """put: Assign to the dictionary an item for the key.
 
         The dictionary will contain the item value for the key.
+        This is the setattr method.
 
         Args:
             key (str): key
@@ -35,6 +36,9 @@ class BasicCache(BaseCaching):
 
     def get(self, key):
         """get: Get an item by key or None if no key has been passed.
+
+        This is the getattr method. If called, it return the cached item\
+            for the key.
 
         Args:
             key (str): key.
