@@ -14,7 +14,7 @@ class BasicCache(BaseCaching):
         BaseCaching (class): Base class.
     """
 
-    def put(self, key: str, item: str) -> None:
+    def put(self, key, item):
         """Assign to the dictionary an item for the key.
 
         Args:
@@ -28,7 +28,7 @@ class BasicCache(BaseCaching):
             return
         self.cache_data[key] = item
 
-    def get(self, key: str) -> str:
+    def get(self, key):
         """get: Get an item by key or None if no key has been passed.
 
         Args:
