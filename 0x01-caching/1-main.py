@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-""" 1-main """
+"""1-main module. It is the runner script for the 1-fifo_cache module.\
+    It creates an instance of FIFOCache and tests the put and get methods."""
+
+
 FIFOCache = __import__('1-fifo_cache').FIFOCache
+
 
 my_cache = FIFOCache()
 my_cache.put("A", "Hello")
