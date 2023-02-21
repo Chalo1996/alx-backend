@@ -5,7 +5,7 @@
 """
 
 
-from baseClass import BaseCaching
+BaseCaching = __import__('baseClass').BaseCaching
 
 
 class BasicCache(BaseCaching):
