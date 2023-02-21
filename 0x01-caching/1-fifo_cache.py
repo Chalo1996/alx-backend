@@ -4,7 +4,7 @@
 """
 
 
-BaseCaching = __import__('baseClass').BaseCaching
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class FIFOCache(BaseCaching):
