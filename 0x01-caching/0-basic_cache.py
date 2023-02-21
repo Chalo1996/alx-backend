@@ -2,9 +2,6 @@
 """0-basic_cache module"""
 
 
-from typing import Union
-
-
 BaseCaching = __import__('baseClass').BaseCaching
 
 
@@ -25,7 +22,7 @@ class BasicCache(BaseCaching):
             return
         self.cache_data[key] = item
 
-    def get(self, key: Union[str, int]) -> Union[str, int, None]:
+    def get(self, key: str) -> str:
         """Get an item by key.
 
         Args:
