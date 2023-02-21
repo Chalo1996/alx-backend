@@ -2,6 +2,9 @@
 """0-basic_cache module"""
 
 
+from typing import Union
+
+
 BaseCaching = __import__('baseClass').BaseCaching
 
 
@@ -14,7 +17,7 @@ class BasicCache(BaseCaching):
         BaseCaching (class): Base class.
     """
 
-    def put(self, key: str | None, item: str | None) -> None:
+    def put(self, key: Union[str, None], item: Union[str, None]) -> None:
         """Assign to the dictionary an item for the key.
 
         Args:
@@ -28,7 +31,7 @@ class BasicCache(BaseCaching):
             return
         self.cache_data[key] = item
 
-    def get(self, key: str | None) -> str | None:
+    def get(self, key: Union[str, None]) -> Union[str, None]:
         """Get an item by key.
 
         Args:
