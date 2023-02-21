@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""1-fifo_cache module."""
+"""1-fifo_cache module. Implements the FIFO caching replacement algorithm. \
+    It inherits the properties of the BaseCaching class.
+"""
 
 
 BaseCaching = __import__('baseClass').BaseCaching
