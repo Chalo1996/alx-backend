@@ -6,9 +6,15 @@ BaseCaching = __import__('baseClass').BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """BasicCache class"""
+    """BasicCache: Implements the put and get methods for adding and item\
+        to the dictionary using a key and getting an item from the\
+            dictionary using a key.
 
-    def put(self, key, item) -> None:
+    Args:
+        BaseCaching (class): Base class.
+    """
+
+    def put(self, key: str, item: str) -> None:
         """Assign to the dictionary an item for the key.
 
         Args:
