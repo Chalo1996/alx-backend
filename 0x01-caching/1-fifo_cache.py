@@ -6,10 +6,14 @@ BaseCaching = __import__('baseClass').BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """FIFOCache class."""
+    """FIFOCache class. It implements the FIFO replacement algorithm. \
+        It inherits the properties of the BaseCaching class.
+    """
 
     def __init__(self):
-        """Initialize."""
+        """Instantiate the FIFOCache class. It preloads the BaseCaching \
+            class cache_data dictionary then instantiates the cache_lines list.
+        """
         super().__init__()
         self.cache_lines = []
 
@@ -44,7 +48,6 @@ class FIFOCache(BaseCaching):
         Returns:
             item (str): item None otherwise
         """
-
         if key is None or not (key in self.cache_data):
             return None
 
