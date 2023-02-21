@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""0-basic_cache module"""
+"""0-basic_cache module."""
 
 
 from typing import Union
@@ -32,15 +32,14 @@ class BasicCache(BaseCaching):
         self.cache_data[key] = item
 
     def get(self, key: Union[str, None]) -> Union[str, None]:
-        """Get an item by key.
+        """get: Get an item by key or None if no key has been passed.
 
         Args:
-            key (str): key
+            key (str): key.
 
         Returns:
-            item (str): item None otherwise
+            item (str): item None otherwise.
         """
-
         if key is None or not (key in self.cache_data):
             return None
 
