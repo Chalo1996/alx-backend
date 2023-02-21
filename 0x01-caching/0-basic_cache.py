@@ -20,6 +20,8 @@ class BasicCache(BaseCaching):
     def put(self, key, item):
         """Assign to the dictionary an item for the key.
 
+        The dictionary will contain the item value for the key.
+
         Args:
             key (str): key
             item (str): item
