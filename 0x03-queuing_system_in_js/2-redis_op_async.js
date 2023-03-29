@@ -25,9 +25,10 @@ async function displaySchoolValue (schoolName) {
     console.log(`Error: ${e}`);
   }
 }
-
-displaySchoolValue('Holberton');
-setNewSchool('HolbertonSanFrancisco', '100');
-displaySchoolValue('HolbertonSanFrancisco');
-setNewSchool('Chala', 'Chala Secondary');
-displaySchoolValue('Chala');
+(async function () {
+  await displaySchoolValue('Holberton');
+  setNewSchool('HolbertonSanFrancisco', '100');
+  await displaySchoolValue('HolbertonSanFrancisco');
+  setNewSchool('Chala', 'Chala Secondary');
+  await displaySchoolValue('Chala');
+})();
